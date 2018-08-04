@@ -346,6 +346,11 @@
           
 
   
+       
+         <div id="gitment-container"></div>
+       
+
+  
 
 
 
@@ -644,6 +649,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'settingboy',
+            repo: 'settingboy.github.io/blog_comments/',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '3fcea2f5f6d86ba24ee1475e1a409e82aa474200',
+            
+                client_id: 'ccbbb83b126513e95092'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
